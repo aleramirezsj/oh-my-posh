@@ -34,7 +34,7 @@
           "type": "os"
         },
         {
-          "background": "#000000",
+          "background": "#202020",
           "foreground": "#ffffff",
           "leading_diamond": "\ue0b2",
           "properties": {
@@ -44,7 +44,7 @@
           },
           "style": "diamond",
           "template": "{{ if or (eq .OS \"darwin\") (eq .OS \"linux\") }}{{.Icon}}{{ if .WSL }}\u279c \ue62a {{ end }} {{ end }}",
-          "trailing_diamond": "<transparent,#000000>\ue0b2</>",
+          "trailing_diamond": "<transparent,#202020>\ue0b2</>",
           "type": "os"
         },
         {
@@ -75,12 +75,12 @@
           "type": "sysinfo"
         },
         {
-          "background": "#000000",
+          "background": "#202020",
           "foreground": "#c1e2df",
           "leading_diamond": "\ue0b2",
           "style": "diamond",
           "template": "{{ if or (eq .OS \"darwin\") (eq .OS \"linux\") }}\ue266 MEM: {{ round .PhysicalPercentUsed .Precision }}% | {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB \ue266 {{ end }}",
-          "trailing_diamond": "<transparent,#000000>\ue0b2</>",
+          "trailing_diamond": "<transparent,#202020>\ue0b2</>",
           "type": "sysinfo"
         },
         {

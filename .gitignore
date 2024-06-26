@@ -161,8 +161,6 @@ Output/
 *.sha256
 *.7z
 
-# images
-*.png
 
 # go releaser
 /src/dist
