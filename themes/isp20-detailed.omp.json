@@ -167,13 +167,14 @@
           "leading_diamond": "\ue0b2",
           "properties": {
             "branch_icon": "\ue725 ",
+            "fetch_user": true,
             "fetch_stash_count": true,
             "fetch_status": true,
             "fetch_upstream_icon": true,
             "fetch_worktree_count": true
           },
           "style": "diamond",
-          "template": " \uF417 {{ .Commit.Subject }}",
+          "template": "{{ if eq .Commit.Author.Name .User.Name  }} \uF417 {{ .Commit.Subject }} {{ else }} \uF417 {{ .Commit.Subject }} by ({{.Commit.Author.Name }}) {{ end }}",
           "trailing_diamond": "\ue0b0",
           "type": "git"
         }
